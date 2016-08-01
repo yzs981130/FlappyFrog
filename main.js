@@ -287,7 +287,7 @@ function initSounds() {
   doInitSounds(_scoreSounds, 'score', _numScoreSounds);
   doInitSounds(_hurtSounds, 'hurt', _numHurtSounds);
 
-  _flapSound = _game.add.audio('flap');
+  _flapSound = _game.add.audio('flap', 0.5);
 
   _bgm = _game.add.audio('bgm', 0.5);
   _bgm.onStop.add(function() {
